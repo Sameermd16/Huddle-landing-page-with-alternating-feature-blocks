@@ -82,7 +82,7 @@
   padding: 4rem;
 }
 .grid-2, .grid-3, .grid-4{
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 }
 
 .footer{
@@ -110,6 +110,8 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  /* border: 1px solid white; */
+
 }
 .about{
   display: flex;
@@ -117,6 +119,8 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  /* border: 1px solid white; */
+
 }
 .career{
   display: flex;
@@ -124,6 +128,7 @@
   justify-content: center;
   gap: 1rem;
   align-items: center;
+  /* border: 1px solid white; */
 }
 .socials{
   display: flex;
@@ -165,11 +170,90 @@
   border-radius: 20px;
   margin: 1rem 0;
 }
-
+.btn-2:hover, .btn-3:hover{
+  background-color: hsla(322, 100%, 66%, 0.587);
+}
+.about > p:hover, .career > p:hover{
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+.social-icon:hover{
+  color: var(--Pink);
+}
+.btn-top-1{
+  cursor: pointer;
+}
+.outer-main{
+  padding: 1rem;
+}
+.logo > img{
+  color: white;
+  filter: invert(100%);
+  width: 130px;
+}
 .attribution {
-  font-size: 11px;
+  font-size: 14px;
   text-align: center;
+  margin: 1rem 0;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 800px){
+  .grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "pic"
+    "text"
+  }
+  .pic{
+    grid-area: pic;
+  }
+  .text{
+    grid-area: text;
+    padding: 0;
+    text-align: center;
+  }
+  .aside{
+    width: 90%;
+  }
+  .grid-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "text"
+    "pic"
+  }
+  .footer{
+    /* border: 1px solid white; */
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 5rem 1rem 2rem 1rem;
+  }
+  .about{
+    align-items: flex-start;
+    margin-top: 2rem;
+  }
+  .career{
+    align-items: flex-start;
+    margin-top: -.2rem;
+  }
+  .header > img{
+    width: clamp(100px, 100px, 150px);
+  }
+  .header > .btn-top-1{
+    width: clamp(70px, 90px, 90px);
+    font-size: 11px;
+    padding: 0.5rem;
+  }
+  .grid-1 > .text{
+    margin-bottom: 3rem;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
 }
