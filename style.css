@@ -30,7 +30,7 @@
   background: url(images/bg-hero-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(173, 216, 230, 0.393);
+  background-color: rgba(173, 216, 230, 0.749);
   
   /* padding: 2rem; */
 }
@@ -40,7 +40,7 @@
   background-color: white;
   color: black;
   width: 150px;
-  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 }
 /* mains grids*/
 .grid{
@@ -131,10 +131,40 @@
   align-items: center;
   gap: 1rem;
 }
+.socials > a{
+  color: white;
+}
+.social-icon{
+  width: 20px;
+  height: 20px;
+}
+.main-aside{
+  display: flex;
+  justify-content: center;
 
-
-
-
+}
+.aside{
+  width: 40%;
+  height: 130px;
+  /* border: 1px solid black; */
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: -45px;
+  background-color: white;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+.aside > h3{
+  margin: 2rem 0 0 0;
+}
+.btn-3{
+  background-color: var(--Pink);
+  border: none;
+  color: white;
+  width: 45%;
+  height: 40px;
+  border-radius: 20px;
+  margin: 1rem 0;
+}
 
 .attribution {
   font-size: 11px;
