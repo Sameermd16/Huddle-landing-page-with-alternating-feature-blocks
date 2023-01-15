@@ -19,6 +19,15 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+h1, h2, h3{
+  font-family: 'Poppins', sans-serif; 
+}
+.text > p{
+  line-height: 1.3rem;
+  color: var(--Grayish-Blue);
+  /* font-family: 'Open Sans', sans-serif; */
+}
+
 /* header */
 .header{
   display: flex;
